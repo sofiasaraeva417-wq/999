@@ -6,14 +6,14 @@
     <title>HairRevive | Восстановление волос</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Базовые сбросы стилей */
+     
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        /* Основные переменные цветов */
+     
         :root {
             --primary: #8B7355;
             --secondary: #D4B996;
@@ -25,7 +25,7 @@
             --transition: all 0.3s ease;
         }
         
-        /* Основные стили */
+      
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -41,7 +41,6 @@
             padding: 0 20px;
         }
         
-        /* Стили для заголовков */
         h1, h2, h3, h4 {
             color: var(--dark);
             margin-bottom: 1rem;
@@ -76,12 +75,12 @@
             font-size: 1.5rem;
         }
         
-        /* Стили для параграфов */
+      
         p {
             margin-bottom: 1.2rem;
         }
         
-        /* Стили для ссылок */
+    
         a {
             color: var(--primary);
             text-decoration: none;
@@ -91,8 +90,7 @@
         a:hover {
             color: var(--secondary);
         }
-        
-        /* Стили для кнопок */
+
         .btn {
             display: inline-block;
             background-color: var(--primary);
@@ -124,7 +122,7 @@
             color: var(--white);
         }
         
-        /* Шапка сайта */
+    
         header {
             background-color: var(--white);
             box-shadow: var(--shadow);
@@ -189,7 +187,7 @@
             z-index: 101;
         }
         
-        /* Герой-секция */
+  
         .hero {
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
                         url('ф.jpg');
@@ -221,7 +219,7 @@
             opacity: 0.9;
         }
         
-        /* Секция "О нас" */
+  
         .about {
             padding: 80px 0;
             background-color: var(--light);
@@ -258,7 +256,7 @@
             transform: scale(1.05);
         }
         
-        /* Секция услуг */
+   
         .services {
             padding: 80px 0;
         }
@@ -307,8 +305,7 @@
             display: inline-block;
             margin-top: 10px;
         }
-        
-        /* Секция "Преимущества" */
+
         .features {
             padding: 80px 0;
             background-color: var(--light);
@@ -345,8 +342,7 @@
             background-color: rgba(139, 115, 85, 0.1);
             border-radius: 50%;
         }
-        
-        /* Секция "Контакты" */
+
         .contact {
             padding: 80px 0;
         }
@@ -422,7 +418,6 @@
             flex-shrink: 0;
         }
         
-        /* Стили для сообщений и загрузки */
         .message {
             padding: 15px;
             margin: 15px 0;
@@ -467,8 +462,7 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
-        /* Подвал сайта */
+    
         footer {
             background-color: var(--dark);
             color: var(--white);
@@ -552,8 +546,7 @@
             color: #aaa;
             font-size: 0.9rem;
         }
-        
-        /* Анимации */
+       
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -564,8 +557,7 @@
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-        
-        /* Адаптивность для мобильных устройств */
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2rem;
@@ -645,7 +637,7 @@
     </style>
 </head>
 <body>
-    <!-- Шапка сайта -->
+ 
     <header>
         <div class="container header-container">
             <div class="logo">Hair<span>Revive</span></div>
@@ -666,7 +658,6 @@
         </div>
     </header>
 
-    <!-- Главный баннер -->
     <section class="hero" id="home">
         <div class="container hero-content">
             <h1>Восстановление волос</h1>
@@ -676,7 +667,6 @@
         </div>
     </section>
 
-    <!-- Секция "О нас" -->
     <section class="about" id="about">
         <div class="container">
             <h2>О нас</h2>
@@ -694,7 +684,7 @@
         </div>
     </section>
 
-    <!-- Секция услуг -->
+
     <section class="services" id="services">
         <div class="container">
             <h2>Наши услуги</h2>
@@ -735,7 +725,7 @@
         </div>
     </section>
 
-    <!-- Секция "Преимущества" -->
+
     <section class="features" id="features">
         <div class="container">
             <h2>Наши преимущества</h2>
@@ -775,7 +765,7 @@
         </div>
     </section>
 
-    <!-- Секция "Контакты" -->
+
     <section class="contact" id="contact">
         <div class="container">
             <h2>Свяжитесь с нами</h2>
@@ -833,7 +823,7 @@
                     <p>Заполните форму ниже, и мы свяжемся с вами в ближайшее время</p>
                     
                     <form id="contactForm">
-                        <!-- Сообщения об успехе/ошибке -->
+              
                         <div id="messageContainer" style="display: none;"></div>
                         
                         <div class="form-group">
@@ -876,7 +866,6 @@
         </div>
     </section>
 
-    <!-- Подвал сайта -->
     <footer>
         <div class="container">
             <div class="footer-container">
@@ -924,7 +913,7 @@
     </footer>
 
     <script>
-        // ================= МОБИЛЬНОЕ МЕНЮ =================
+
         const menuToggle = document.getElementById('menuToggle');
         const mainNav = document.getElementById('mainNav');
         
@@ -941,7 +930,7 @@
             }
         });
         
-        // Закрытие меню при клике на ссылку
+
         document.querySelectorAll('#mainNav a').forEach(link => {
             link.addEventListener('click', () => {
                 mainNav.classList.remove('active');
@@ -950,7 +939,7 @@
             });
         });
         
-        // ================= ПЛАВНАЯ ПРОКРУТКА =================
+        
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -967,12 +956,11 @@
                 }
             });
         });
-        
-        // ================= ОТПРАВКА ФОРМЫ =================
+ 
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Получаем данные из формы
+   
             const name = document.getElementById('name').value.trim();
             const phone = document.getElementById('phone').value.trim();
             const service = document.getElementById('service').value;
@@ -980,28 +968,25 @@
             const submitBtn = document.getElementById('submitBtn');
             const messageContainer = document.getElementById('messageContainer');
             
-            // Скрываем предыдущие сообщения
+       
             messageContainer.style.display = 'none';
-            
-            // Валидация
+ 
             if (!name || !phone) {
                 showMessage('Пожалуйста, заполните обязательные поля (имя и телефон).', 'error', messageContainer);
                 return;
             }
             
-            // Валидация телефона
             const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/;
             if (!phoneRegex.test(phone.replace(/\D/g, ''))) {
                 showMessage('Пожалуйста, введите корректный номер телефона.', 'error', messageContainer);
                 document.getElementById('phone').focus();
                 return;
             }
-            
-            // Показываем индикатор загрузки
+
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Отправка...';
             
-            // Имитация отправки формы (в реальности здесь должен быть запрос на сервер)
+  
             setTimeout(() => {
                 showMessage(
                     `✅ Спасибо, ${name}! Ваша заявка принята.<br>
@@ -1010,12 +995,12 @@
                     messageContainer
                 );
                 
-                // Показываем анимацию успеха
+
                 submitBtn.innerHTML = '<i class="fas fa-check"></i> Успешно отправлено!';
                 submitBtn.style.background = '#4CAF50';
                 submitBtn.style.animation = 'pulse 0.5s';
                 
-                // Очищаем форму через 3 секунды
+
                 setTimeout(() => {
                     document.getElementById('contactForm').reset();
                     submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Отправить заявку';
@@ -1024,13 +1009,12 @@
                     submitBtn.disabled = false;
                 }, 3000);
                 
-                // Прокрутка к сообщению
+   
                 messageContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 
             }, 1500);
         });
-        
-        // Функция показа сообщений
+
         function showMessage(text, type, container) {
             container.innerHTML = `
                 <div class="message ${type}">
@@ -1039,16 +1023,14 @@
                 </div>
             `;
             container.style.display = 'block';
-            
-            // Автоматическое скрытие сообщения через 10 секунд
+
             setTimeout(() => {
                 if (container.style.display === 'block') {
                     container.style.display = 'none';
                 }
             }, 10000);
         }
-        
-        // ================= ЭФФЕКТЫ ПРИ ПРОКРУТКЕ =================
+
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
@@ -1057,8 +1039,7 @@
                 header.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
             }
         });
-        
-        // Автоматический фокус на форме при переходе по якорю
+
         window.addEventListener('hashchange', function() {
             if (window.location.hash === '#contact') {
                 setTimeout(() => {
